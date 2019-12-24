@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tableaux HTML</title>
+
+    <style>
+            body {
+                background-color: gold;
+            }
+
+            dl {
+                background-color: cadetblue;
+            }
+
+            dt {
+                font-weight: bold;
+            }
+
+            dd{
+                font-style: italic;
+            }          
+
+             /* les styles pour les tableaux */
+
+            table {
+                font-family: Arial, Helvetica, sans-serif;
+                width: 80%;
+                /* font-size: 1.2em;  */
+                border-collapse: collapse;
+            }
+
+            /* pour la typo valeur en "em" proportionnel */ 
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;                
+            }
+
+            /* Even (impair) odd (pair) */
+            tr:nth-child(even) {
+                background-color: orangered;
+            }
+            /* (solid), trait continue */
+
+            caption {
+                border: 1px solid blue;
+                padding: 16px;
+                background-color: darkolivegreen;
+                color: whitesmoke;
+                font-weight: bolder;                
+            }
+
+    </style>
+
+</head>
+<body>
+    <h1>Des tableaux et une liste de définition</h1>
+    <h2>Liste de termes et leur définition</h2>
+    
+    <dl>
+        <dt>Vacances</dt>
+            <dd>Période de congés des personnes en activité.</dd>
+        <dt>Travail</dt>
+            <dd>Activité humaine organisée et utile. Ensemble de ces activités.</dd>
+    </dl>
+
+
+    <hr>
+    <h2>Des tableaux</h2>
+        <table>
+        
+            <caption>Les plus moche cie du monde</caption> 
+            <!-- (caption)la légende du tableau -->
+            <!-- table>tr*8>td*3{cellule} tr: table-raw'raw:rangée; td: table-data; th: table-head -->
+            <tr>
+                
+                <th>Compagnie</th>
+                <th>Contact</th>
+                <th>téléphone</th>
+                <th>Pays</th>
+            </tr>
+            <tr>
+                <td> <a href="https://www.picard.fr/" target="_blank">Picard</a></td>
+                <td>065587587</td>
+                <td>M<sup>me</sup> Picard</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.lidl.fr/" target="_blank" title="le site de lidl">Lidl</a></td>
+                <td>0258702587</td>
+                <td>M<sup>elle</sup> lidl</td>
+                <td>Allemagne</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.carrefour.fr/" target="_blank" title="le site de carrefour">Carrefour</a></td>
+                <td>04702525405</td>
+                <td>Mr carouf</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.walmart.com/" target="_blank" title="le site de walmart">Walmart</a></td>
+                <td>02587258785</td>
+                <td>Mr wall</td>
+                <td>Kainri</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.e-leclerc.com/" target="_blank" title="le site de leclerc">leclerc</a></td>
+                <td>02547258</td>
+                <td>Mr leclerc</mr>
+                <td>France</td>
+            </tr>
+        
+        </table>
+
+
+    
+
+    <hr>
+    <h2>Un tableau avec fusion de cellule(colspan: fusionde cellule</h2>
+    <table>
+        <!-- tr*3>td*3 -->
+        <tr>
+            <th>Nom</th>
+            <th colspan="2">Courriel</th>
+            
+        </tr>
+        <tr>
+            <td>Père fouetard</td>
+            <td>perefouetard@gmail.com</td>
+            <td>0154684773</td>
+        </tr>
+        <tr>
+            <td>Phillipe</td>
+            <td>phillipe.emeran@lepoles.fr</td>
+            <td>0158498451</td>
+        </tr>
+    </table>
+    
+
+
+    
+    <hr>
+    <h2>Un tableau avec fusion de colonnes</h2>
+    <table>
+        <!-- tr*2>td*3 -->
+        <!-- colspan fusion de colonnes -->
+        <tr>
+            <th>Nom</th>
+            <th colspan="2">Email</th>
+        </tr>
+        <tr>
+            <td>Pere fouetard</td>
+            <td>    <a href="mailtopanamme@poles.com"></a>perefouetard]lepoles.com</td>
+            <td>merefouetard@lepoles.com</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+<hr>
+<h2>Un tableau avec fusion de rangée</h2>
+<!-- table>tr*3>td*2 (rowspan: -->
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Bill gates</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Téléphone</td>
+            <td>06 54 56 44 74</td>
+        </tr>
+        <tr>
+            <td>0554750287</td>
+        </tr>
+        <tr>
+            <td>0573575275</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>                                                                  
+ 
+
+</body>
+</html>
